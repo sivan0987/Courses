@@ -10,6 +10,7 @@ const coursesSchema = new mongoose.Schema({
         {
           title: { type: String, required: true },   
           videoUrl: { type: String },               
+          pdfUrl: { type: String },    
           description: { type: String }            
         }
       ]

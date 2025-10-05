@@ -1,0 +1,29 @@
+.name {
+    text-align: left;        
+    font-size: 24px;       
+    font-weight: 600;       
+    color: #333;            
+    margin: 20px 0;        
+}
+.courseList {
+    padding: 20px;
+    list-style: none;
+  }
+  
+  .courseItem {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 45px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s all;
+    width: 145px
+  }
+  .courseName{
+    font-size: 19px;    
+  }
+  .courseItem:hover {
+    background-color: #e0e0e0;
+  }
+ 
