@@ -104,6 +104,17 @@ MONGODB_URI=mongodb://localhost:27017/courses
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
+### טעינת נתונים ל-MongoDB (לפני הרצה)
+
+לפני שמריצים את השרת, יש לטעון את נתוני הדוגמה מקובץ `data.json` למסד הנתונים באמצעות MongoDB Compass:
+
+1. פתחו את MongoDB Compass והתחברו ל-`mongodb://localhost:27017`.
+2. ייצרו (או בחרו) בסיס נתונים בשם `courses`.
+3. ייבאו אוסף בשם `courses` באמצעות כפתור Import.
+4. בחרו את הקובץ `data.json` (פורמט JSON) ואשרו את הייבוא.
+
+לאחר הייבוא, ודאו שהאוסף `courses` מכיל את הרשומות מהקובץ.
+
 ### הרצה
 
 1. **הפעלת השרת**
@@ -139,18 +150,15 @@ npm run dev
 - `POST /courses/generateTest` - יצירת חידון מתוכן PDF
   - Body: `{ "lessonName": "string", "pdfPath": "string" }`
   - Response: מערך של 5 שאלות עם מבנה:
-    
+
     [
-      {
-        "question": "שאלה...",
-        "options": ["אפשרות 1", "אפשרות 2", "אפשרות 3", "אפשרות 4"],
-        "correct": "התשובה הנכונה",
-        "explanation": "הסבר קצר"
-      }
+    {
+    "question": "שאלה...",
+    "options": ["אפשרות 1", "אפשרות 2", "אפשרות 3", "אפשרות 4"],
+    "correct": "התשובה הנכונה",
+    "explanation": "הסבר קצר"
+    }
     ]
-    
-
-
 
 ### סכמת הקורסים
 
@@ -169,4 +177,5 @@ npm run dev
   }]
 }
 ```
+
 **הערה**: וודא שיש לך מפתח API תקין של Google Gemini כדי להשתמש בתכונת יצירת החידונים האוטומטית.

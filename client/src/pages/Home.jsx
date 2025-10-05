@@ -10,7 +10,7 @@ const Home = ()=>{
 
     useEffect(()=>{
         axios.get(`http://localhost:3000/courses/${name}`)
-        .then(res => setCourses( res.data))
+        .then(res => setCourses(res.data))
         .catch(err => console.error(err));
     },[])
     return<>

@@ -23,8 +23,6 @@ const LessonsList = ({selectedCourse ,setSelectedCourse}) =>{
      }
      setGrade(sum);
     
-    
-      
   }
   const handeleBackToLessons =()=>{
     setQuiz([]);
@@ -81,7 +79,7 @@ const LessonsList = ({selectedCourse ,setSelectedCourse}) =>{
     else {
     return <>
     <button className={styles.backButton} onClick={() => setSelectedCourse(null)}>
-      back
+      Back 
     </button>
     <h4 className={styles.courseTitle}>{selectedCourse.title}</h4>
     <div className={styles.tableContainer}>
