@@ -1,0 +1,45 @@
+[
+  {
+    "_id": {
+      "$oid": "68dfe00f88164f925074d066"
+    },
+    "username": "sivan",
+    "passwordHash": "$2b$10$abcdefghijk1234567890abcdefghijk1234567890abcdefghijk",
+    "courses": [
+      {
+        "title": "מתמטיקה כיתה ב",
+        "lessons": [
+          {
+            "title": "שיעור 1",
+            "videoUrl": "",
+            "pdfUrl": "uploads/grammer.pdf",
+            "description": "שברים עשרוניים"
+          },
+          {
+            "title": "שיעור 2",
+            "videoUrl": "",
+            "pdfUrl": "uploads/grammer.pdf",
+            "description": "חיבור וחיסור"
+          }
+        ]
+      },
+      {
+        "title": "אנגלית כיתה ה",
+        "lessons": [
+          {
+            "title": "שיעור 1",
+            "videoUrl": "",
+            "pdfUrl": "uploads/grammer.pdf",
+            "description": "פעלים"
+          },
+          {
+            "title": "שיעור 2",
+            "videoUrl": "",
+            "pdfUrl": "uploads/grammer.pdf",
+            "description": "זמנים"
+          }
+        ]
+      }
+    ]
+  }
+]
