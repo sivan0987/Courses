@@ -18,7 +18,7 @@ const LessonsList = ({selectedCourse ,setSelectedCourse}) =>{
     }
       let sum =0;
       { quiz.map((question,index)=>(
-           question.correct ===answers[index]? sum+=10:sum+=0 
+           question.correct ===answers[index]? sum+=20:sum+=0 
        ))
      }
      setGrade(sum);

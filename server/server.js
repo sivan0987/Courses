@@ -14,6 +14,7 @@ const express =
     
     app.use("/uploads", express.static(path.join(__dirname, "uploads")));
     const courseRouter = require("./routes/courseRouter");
+  
     app.use("/courses", courseRouter);
 
     connectDB();

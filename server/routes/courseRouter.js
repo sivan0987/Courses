@@ -5,8 +5,6 @@ const aiservices   = require("../services/aiServices");
 router.post("/generateTest", async (req, res) => {
   try {
     const { lessonName, pdfPath } = req.body;
-    console.log( lessonName, pdfPath );
-    
     const quiz = await aiservices.generateQuizFromPDF(lessonName, pdfPath);
     res.status(200).json(quiz);
   } catch (err) {

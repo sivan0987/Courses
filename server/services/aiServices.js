@@ -20,7 +20,7 @@ function extractAggregationQuery(text) {
   
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-const generateQuizFromPDF = async ( lessonName,pdfPath) => {
+const generateQuizFromPDF = async ( lessonName ,pdfPath) => {
   try {
    
     const dataBuffer = fs.readFileSync(pdfPath);
